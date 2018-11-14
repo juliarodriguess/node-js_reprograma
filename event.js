@@ -1,7 +1,6 @@
 const EventEmitter = require('events');
+const somaNumeros = new EventEmitter ();
 
-class SomaNumeros extends EventEmitter {}
-const somaNumeros = new SomaNumeros();
 somaNumeros.on('number', (number1, number2) => {
   let average = (number1 + number2)/2
   console.log(average)
